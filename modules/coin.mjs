@@ -41,7 +41,11 @@ export function coinFlip() {
  */
 
 function coinFlips(flips) {
-
+  let array = [];
+  for (let i=0; i<flips; i++) {
+    array[i] = Math.random() > .5 ?  'heads' : 'tails';
+  }
+  return array;
 }
 
 /** Count multiple flips
