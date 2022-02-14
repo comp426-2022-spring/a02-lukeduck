@@ -74,7 +74,7 @@ export function countFlips(array) {
   }
 
   if (h !=0 && t != 0) {
-    return {tails: tails, heads: heads};
+    return {tails: t, heads: h};
   } 
 
   if (h == 0 && t == 0) {
@@ -82,11 +82,11 @@ export function countFlips(array) {
   }
   
   if (h == 0) {
-    return {tails: tails};
+    return {tails: t};
   }
   
   if (t == 0) {
-    return {heads: heads};
+    return {heads: h};
   }
 
 
