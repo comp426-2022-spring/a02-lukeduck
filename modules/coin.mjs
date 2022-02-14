@@ -69,7 +69,7 @@ export function countFlips(array) {
     if (array[i] == "heads") {
       h++;
     } else if (array[i] == "tails") {
-      ts++;
+      t++;
     }
   }
 
