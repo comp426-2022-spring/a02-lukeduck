@@ -1,5 +1,4 @@
-// import functions
-import * as coin from  "./modules/coin.mjs";
+import {coinFlips, countFlips} from "./modules/coin.mjs";
 import minimist from 'minimist';
 
 // number CL argument
