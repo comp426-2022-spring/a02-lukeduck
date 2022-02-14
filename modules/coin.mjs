@@ -65,14 +65,31 @@ export function countFlips(array) {
   let h = 0;
   let t = 0;
 
-  for (let i=0; i<array.length; i++) {
-    array[i] == "heads" ? h++ : t++;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == "heads") {
+      h++;
+    } else if (array[i] == "tails") {
+      ts++;
+    }
   }
 
-  return {
-    tails: t,
-    heads: h
+  if (h !=0 && t != 0) {
+    return {tails: tails, heads: heads};
+  } 
+
+  if (h == 0 && t == 0) {
+    return {};
   }
+  
+  if (h == 0) {
+    return {tails: tails};
+  }
+  
+  if (t == 0) {
+    return {heads: heads};
+  }
+
+
 }
 
 /** Flip a coin!
