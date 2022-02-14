@@ -2,7 +2,7 @@ import {flipACoin} from './modules/coin.mjs';
 import minimist from 'minimist';
 
 const args = (minimist)(process.argv.slice(2));
-args["call"];
+args['call'];
 let call = args.call;
 
 if (call == "heads" || call == "tails") {
