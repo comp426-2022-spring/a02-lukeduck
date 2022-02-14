@@ -6,6 +6,6 @@ const args = minimist(process.argv.slice(2));
 args["number"];
 let number = args.number || 1;
 
-let flips = coin.coinFlips(number);
+let flips = coinFlips(number);
 console.log(flips);
-console.log(coin.countFlips(flips));
+console.log(countFlips(flips));
