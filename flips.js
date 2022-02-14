@@ -4,7 +4,7 @@ import minimist from 'minimist';
 
 // number CL argument
 const args = minimist(process.argv.slice(2));
-argv["number"];
+args["number"];
 let number = args.number || 1;
 
 let flips = coin.coinFlips(number);
